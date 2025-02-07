@@ -14,4 +14,6 @@ def main():
         st.code(patterns[pattern_choice](), language="plaintext")
 
 if __name__ == "__main__":
+    import streamlit as st
+    st.set_page_config(page_title="Pattern Generator")
     main()
