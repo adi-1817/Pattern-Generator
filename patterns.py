@@ -9,7 +9,13 @@ class PatternGenerator:
         self.size = size
 
     def square_pattern(self):
-        return '\n'.join(['*' * self.size for _ in range(self.size)])
+        for i in range(1, self.size+1):
+            for j in range(1, self.size+1):
+                print('*', end="")
+            print()
+
+    # def square_pattern(self):
+    #     return '\n'.join(['*' * self.size for _ in range(self.size)])
     
     def triangle_pattern(self):
         return '\n'.join(['*' * i for i in range(1, self.size + 1)])
